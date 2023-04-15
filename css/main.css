@@ -1,0 +1,205 @@
+body{
+   margin: 0;
+   padding: 0;
+   font-size: 13px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color:#202124;
+}
+/************************************************************************/
+/*Barra de navegación*/
+
+header{
+    width: 100%; /* ancho */
+    height: 120px; /* alto */
+}
+
+header nav {
+    display:flex;
+    /*Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar puntitos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgb(255, 255, 255);
+}
+
+nav .nav-right-section .menu2{
+    background-image: url(/unnamed.jpg); /* Imagen de mi perfil*/
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
+    border-radius: 60px;
+    background-size: contain;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(/puntos.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+/****************************************************************************/
+/* Main */
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+main .main-logo img{
+    width: 270px;
+    height: 90px;
+}
+/* Sección input */
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #626363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    color: #e8eaed;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 2px 2px 2px #1a1a1a7e;
+    background-color: #303134;
+    border: 1px solid #303134;
+    
+}
+main .main-input .search-icon{
+    background-image: url(/Lupa.png);
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://cdn.discordapp.com/attachments/1078439993271398553/1091819945328914512/lens.png);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 15px;
+}
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+    height: 30px;
+    border-radius: 4px;
+}
+
+main .main-buttons div{
+    display: inline-block; /*Pone ambos botones en la misma linea*/
+}
+
+main .main-buttons .boton-busqueda{
+    background-color: #303134;
+    color: #e8eaed;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    
+  
+}
+
+main .main-buttons .boton-suerte{
+    background-color: #303134;
+    color: #e8eaed;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+    border: 0.2px solid #626363;
+}
+/*******************************************/
+/* Footer */
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 15px;
+    background-color: #171818;
+    /* Footer dividio en 2 columnas */
+    display: grid;grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0%;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color:#9aa0a6 ;
+    margin: 10px;
+}
+
